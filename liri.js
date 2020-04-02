@@ -25,6 +25,8 @@ switch(command){
             console.log("Location: " + JSON.parse(body)[0].venue.city + " " + JSON.parse(body)[0].venue.region);
             console.log("Date: " + moment(JSON.parse(body)[0].datetime).format("MM/DD/YYYY"));
             console.log("-------------------------------------");
+            }else{
+                console.log(error);
             }
     });
     break;
@@ -41,7 +43,7 @@ switch(command){
                 }
                 console.log(data.tracks.items[0]);
                 console.log("-------------------------------------");
-                console.log("Artist: " + data.tracks.items[0].artists.name);
+                console.log("Artist: " + data.tracks.items[0].artists[0].name);
                 console.log("Song Name: " + data.tracks.items[0].name);
                 console.log("Preview Link: " + data.tracks.items[0].preview_url);
                 console.log("Album: " + data.tracks.items[0].album.name);
