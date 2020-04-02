@@ -39,6 +39,7 @@ switch(command){
                 if(err){
                     return console.log("ERROR: " + err)
                 }
+                console.log(data.tracks.items[0]);
                 console.log("-------------------------------------");
                 console.log("Artist: " + data.tracks.items[0].artists.name);
                 console.log("Song Name: " + data.tracks.items[0].name);
