@@ -16,6 +16,8 @@ The following commands will be accepted:
 
 **`node liri.js concert-this <artist name here>`**
 
+![](concert-this.gif)
+
 This command will search the Bands in Town API and return the following data:
 
 * Name of the venue
@@ -36,7 +38,7 @@ This command will search the Spotify API and return the following data:
 
 * The album that the song is from
 
-If no song is provided, the default song will be populated.
+If no song is provided, the default song, The Sign - Ace of Base, will be populated.
 
 **`node liri.js movie-this "<movie title here>"`**
 
@@ -50,3 +52,24 @@ This command will search the OMDB API and return the following data:
 * Language of the movie.
 * Plot of the movie.
 * Actors in the movie.
+
+If no movie title is provided, the default movie "Mr. Nobody" will be populated.
+
+**`node liri.js do-what-it-says`**
+
+This command will search the Spotify API for the song provided in random.txt and return the data.
+
+## Technology Used
+
+- Visual Studio Code
+- JavaScript
+- Node.js
+-   [Axios](https://www.npmjs.com/package/axios)
+-   [Moment](https://www.npmjs.com/package/moment)
+-   [DotEnv](https://www.npmjs.com/package/dotenv)
+
+## APIs Used
+
+-   [Node-Spotify-API](https://www.npmjs.com/package/node-spotify-api)
+-   [OMDB API](http://www.omdbapi.com)
+-   [Bands In Town API](http://www.artists.bandsintown.com/bandsintown-api)
