@@ -28,6 +28,8 @@ This command will search the Bands in Town API and return the following data:
 
 **`node liri.js spotify-this-song "<song name here>"`**
 
+![](spotify-this-song.gif)
+
 This command will search the Spotify API and return the following data:
 
 * Artist(s)
@@ -41,6 +43,8 @@ This command will search the Spotify API and return the following data:
 If no song is provided, the default song, The Sign - Ace of Base, will be populated.
 
 **`node liri.js movie-this "<movie title here>"`**
+
+![](movie-this.gif)
 
 This command will search the OMDB API and return the following data:
 
@@ -56,6 +60,8 @@ This command will search the OMDB API and return the following data:
 If no movie title is provided, the default movie "Mr. Nobody" will be populated.
 
 **`node liri.js do-what-it-says`**
+
+![](do-what-it-says.gif)
 
 This command will search the Spotify API for the song provided in random.txt and return the data.
 
